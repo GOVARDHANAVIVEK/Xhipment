@@ -51,83 +51,10 @@
 
 
 
-# API Testing Endpoints:
-1. Login Endpoint :
-   
-          curl  -X POST \
-            'http://localhost:{PORT}/api/auth/login' \
-            --header 'Accept: */*' \
-            --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
-            --header 'Content-Type: application/json' \
-            --data-raw '{
-            "email":"user_email",
-            "password":"user_password"
-          }'
+# API Testing collection:
 
-2. register Endpoint: 
-        
-            curl  -X POST \
-                'http://localhost:{PORT}/api/auth/register' \
-                --header 'Accept: */*' \
-                --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
-                --header 'Content-Type: application/json' \
-                --data-raw '{
-                "email": provide_email,
-                "fullName":provide_fullname,
-                "phoneNumber":provide_mobile_number,
-                "password": provide_password,
-                "confirmPassword": confirm_password,
-                "address": provide_address_here...
-              }'
+        [Xhimpent.postman_collection.json](https://github.com/user-attachments/files/19147710/Xhimpent.postman_collection.json)
 
-3. Refresh token: 
-        
-              curl  -X POST \
-                'http://localhost:{PORT}/api/auth/refresh' \
-                --header 'Accept: */*' \
-                --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
-                --header 'Content-Type: application/json' \
-                --data-raw '{
-                "refreshToken": provide_refresh_token
-                
-              }'   
-
-
-4. create order endpoint : 
-
-                    curl  -X POST \
-                        'http://localhost:{PORT}/api/orders' \
-                        --header 'Accept: */*' \
-                        --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
-                        --header 'Authorization: Bearer provide_your_access_token' \
-                        --header 'Content-Type: application/json' \
-                        --data-raw '{
-                        "userId":provide_user_id (check login route / register_route payload) ,
-                        "items":[
-                        {
-                          "productId": "P123",
-                          "name": "Wireless Headphones",
-                          "price": 79.99,
-                          "quantity": 10
-                        },
-                        {
-                          "productId": "P456",
-                          "name": "Running Shoes",
-                          "price": 65,
-                          "quantity": 12
-                        }
-                        ],
-                        "status":"Pending"
-                        }'
-
-
-5. get order details: 
-
-              curl  -X GET \
-              'http://localhost:{PORT}/api/orders/provide_order_id' \
-              --header 'Accept: */*' \
-              --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
-              --header 'Authorization: Bearer provide_your_access_token'
 
 MongoDb Inventory and Order collection: 
 
@@ -135,3 +62,4 @@ MongoDb Inventory and Order collection:
 
       [Xhipment.inventories.json](https://github.com/user-attachments/files/19145347/Xhipment.inventories.json)
       [Xhipment.orders.json](https://github.com/user-attachments/files/19145349/Xhipment.orders.json)
+
