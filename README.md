@@ -5,7 +5,7 @@
 
 1. Install Dependencies:
         
-            npm install aws-sdk bcryptjs body-parser bullmq cookie-parser dotenv express express-rate-limit ioredis jsonwebtoken mongoose
+            npm install 
 
     - "aws-sdk": "^2.1692.0",
     - "bcryptjs": "^3.0.2",
