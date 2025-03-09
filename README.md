@@ -55,7 +55,7 @@
 1. Login Endpoint :
    
           curl  -X POST \
-            'http://localhost:3000/api/auth/login' \
+            'http://localhost:{PORT}/api/auth/login' \
             --header 'Accept: */*' \
             --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
             --header 'Content-Type: application/json' \
@@ -67,7 +67,7 @@
 2. register Endpoint: 
         
             curl  -X POST \
-                'http://localhost:3000/api/auth/register' \
+                'http://localhost:{PORT}/api/auth/register' \
                 --header 'Accept: */*' \
                 --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
                 --header 'Content-Type: application/json' \
@@ -83,7 +83,7 @@
 3. Refresh token: 
         
               curl  -X POST \
-                'http://localhost:3000/api/auth/refresh' \
+                'http://localhost:{PORT}/api/auth/refresh' \
                 --header 'Accept: */*' \
                 --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
                 --header 'Content-Type: application/json' \
@@ -96,7 +96,7 @@
 4. create order endpoint : 
 
                     curl  -X POST \
-                        'http://localhost:3000/api/orders' \
+                        'http://localhost:{PORT}/api/orders' \
                         --header 'Accept: */*' \
                         --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
                         --header 'Authorization: Bearer provide_your_access_token' \
@@ -124,7 +124,7 @@
 5. get order details: 
 
               curl  -X GET \
-              'http://localhost:3000/api/orders/provide_order_id' \
+              'http://localhost:{PORT}/api/orders/provide_order_id' \
               --header 'Accept: */*' \
               --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
               --header 'Authorization: Bearer provide_your_access_token'
