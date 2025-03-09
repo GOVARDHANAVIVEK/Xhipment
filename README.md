@@ -1,7 +1,7 @@
 # Xhipment
 
 
-## Get Strated
+## Get Started
 
 1. Install Dependencies:
         
@@ -35,9 +35,9 @@
 
            docker run -d --name redis -p 6379:6379 redis
 
-4. setup SQS and SES in AWS and update the environment variable in .env file
+4. Setup SQS with new Queue creation. COpy the Queue URL and and update in the .env file
 
-5. verify Email in SES
+5. Setup SES in AWS and verify sneder and reciever Email in SES to enable email serveices.
 
 6. run command :
 
@@ -67,7 +67,7 @@
 2. register Endpoint: 
         
             curl  -X POST \
-                'http://localhost:4100/api/auth/register' \
+                'http://localhost:3000/api/auth/register' \
                 --header 'Accept: */*' \
                 --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
                 --header 'Content-Type: application/json' \
@@ -83,7 +83,7 @@
 3. Refresh token: 
         
               curl  -X POST \
-                'http://localhost:4100/api/auth/refresh' \
+                'http://localhost:3000/api/auth/refresh' \
                 --header 'Accept: */*' \
                 --header 'User-Agent: Thunder Client (https://www.thunderclient.com)' \
                 --header 'Content-Type: application/json' \
