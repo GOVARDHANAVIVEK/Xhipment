@@ -21,7 +21,7 @@
 
 2. create .env file in ./ with following key:values
                 
-            PORT = port_number
+            PORT = port_number {3000}
             MONGOOSE_URI = your_mongodb_url (cloud_version)
             JWT_SECRET = your_secret_value
             NODE_ENV = dev #set this to production when deploy
